@@ -44,7 +44,6 @@ class IdentifierTest{
 		//int myage = 12;
 
 		//System.out.println(myage);
-
 		int myAge = 12;
 		
 	}
