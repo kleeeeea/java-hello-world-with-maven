@@ -1,3 +1,5 @@
+package variable_code_uft8;
+
 /*
 ���Ա�ʶ����ʹ��
 
@@ -38,19 +40,20 @@ class IdentifierTest{
 
 		char gender = 'a';
 
-		char c1 = 'Ů';
+		char c1 = 'a';
 		
 		//���Ƽ���д��
 		//int myage = 12;
 
 		//System.out.println(myage);
+
 		int myAge = 12;
 		
 	}
 
-//	public static void main1(String[] args){
-//
-//	}
+	public static void main1(String[] args){
+		
+	}
 }
 
 

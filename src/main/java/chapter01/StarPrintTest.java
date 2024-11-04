@@ -1,3 +1,5 @@
+package chapter01;
+
 class StarPrintTest {
 	public static void main(String[] args) {
 		System.out.println("*    *");
