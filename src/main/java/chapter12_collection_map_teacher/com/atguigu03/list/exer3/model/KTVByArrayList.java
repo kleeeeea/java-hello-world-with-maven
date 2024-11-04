@@ -52,7 +52,7 @@ public class KTVByArrayList {
     private static void addMusicList() {
         musicList.add("本草纲目");
         musicList.add("你是我的眼");
-        musicList.add("老男孩");
+        musicList.add("老a孩");
         musicList.add("白月光与朱砂痣");
         musicList.add("不谓侠");
         musicList.add("爱你");

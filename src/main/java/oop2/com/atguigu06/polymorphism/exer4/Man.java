@@ -11,11 +11,11 @@ package oop2.com.atguigu06.polymorphism.exer4;
 public class Man extends Person{
 
     public void eat(){
-        System.out.println("男人大口的吃饭");
+        System.out.println("a人大口的吃饭");
     }
 
     public void toilet(){
-        System.out.println("男人去男厕所");
+        System.out.println("a人去a厕所");
     }
 
     public void smoke(){

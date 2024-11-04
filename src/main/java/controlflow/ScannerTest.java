@@ -40,7 +40,7 @@ class ScannerTest {
 		System.out.print("你是否单身（单身：true;不单身：false）：");
 		boolean isSingle = scan.nextBoolean();
 
-		System.out.print("请输入你的性别(男\\女)："); 
+		System.out.print("请输入你的性别(a\\女)："); 
 		char gender = scan.next().charAt(0);
 
 		System.out.println("网名：" + name + ",年龄: " + age + ",体重：" + weight + ",是否单身：" + isSingle + 
