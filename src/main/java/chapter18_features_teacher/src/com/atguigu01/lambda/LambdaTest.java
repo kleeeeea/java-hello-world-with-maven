@@ -1,4 +1,4 @@
-package com.atguigu01.lambda;
+package chapter18_features_teacher.src.com.atguigu01.lambda;
 
 
 import org.junit.Test;

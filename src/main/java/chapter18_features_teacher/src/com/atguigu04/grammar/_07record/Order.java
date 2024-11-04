@@ -1,4 +1,4 @@
-package com.atguigu04.grammar._07record;
+package chapter18_features_teacher.src.com.atguigu04.grammar._07record;
 
 import java.util.Objects;
 

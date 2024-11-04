@@ -1,4 +1,4 @@
-package com.atguigu04.grammar._02trycatch;
+package chapter18_features_teacher.src.com.atguigu04.grammar._02trycatch;
 
 import org.junit.Test;
 

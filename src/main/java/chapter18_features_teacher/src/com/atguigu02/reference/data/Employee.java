@@ -1,4 +1,4 @@
-package com.atguigu02.reference.data;
+package chapter18_features_teacher.src.com.atguigu02.reference.data;
 
 /**
  * @author shkstart 邮箱：shkstart@126.com

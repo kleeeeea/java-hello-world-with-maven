@@ -1,6 +1,6 @@
-package com.atguigu02.reference;
+package chapter18_features_teacher.src.com.atguigu02.reference;
 
-import com.atguigu02.reference.data.Employee;
+import chapter18_features_teacher.src.com.atguigu02.reference.data.Employee;
 import org.junit.Test;
 
 import java.io.PrintStream;

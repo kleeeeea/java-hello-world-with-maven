@@ -1,4 +1,4 @@
-package com.atguigu04.grammar._05switch;
+package chapter18_features_teacher.src.com.atguigu04.grammar._05switch;
 
 /**
  * ClassName: SwitchPatternTest

@@ -1,7 +1,7 @@
-package com.atguigu03.stream;
+package chapter18_features_teacher.src.com.atguigu03.stream;
 
-import com.atguigu02.reference.data.Employee;
-import com.atguigu02.reference.data.EmployeeData;
+import chapter18_features_teacher.src.com.atguigu02.reference.data.Employee;
+import chapter18_features_teacher.src.com.atguigu02.reference.data.EmployeeData;
 import org.junit.Test;
 
 import java.util.Arrays;

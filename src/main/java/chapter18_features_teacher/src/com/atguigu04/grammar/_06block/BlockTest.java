@@ -1,4 +1,4 @@
-package com.atguigu04.grammar._06block;
+package chapter18_features_teacher.src.com.atguigu04.grammar._06block;
 
 import org.junit.Test;
 
