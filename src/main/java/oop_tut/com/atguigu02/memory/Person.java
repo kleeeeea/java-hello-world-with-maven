@@ -1,29 +1,29 @@
 package oop_tut.com.atguigu02.memory;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 14:31
  */
 
 public class Person {
 
-    //å±æ€§
-    String name;//å§“å
-    int age;//å¹´é¾„
-    char gender;//æ€§åˆ«
+    //ÊôĞÔ
+    String name;//ĞÕÃû
+    int age;//ÄêÁä
+    char gender;//ĞÔ±ğ
 
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
     }
 
     public void sleep(int hour){
-        System.out.println("äººè‡³å°‘ä¿è¯æ˜å¤©" + hour + "å°æ—¶çš„ç¡çœ ");
+        System.out.println("ÈËÖÁÉÙ±£Ö¤Ã÷Ìì" + hour + "Ğ¡Ê±µÄË¯Ãß");
     }
 
     public void interests(String hobby){
-        System.out.println("æˆ‘çš„çˆ±å¥½æ˜¯ï¼š" + hobby);
+        System.out.println("ÎÒµÄ°®ºÃÊÇ£º" + hobby);
     }
 
 

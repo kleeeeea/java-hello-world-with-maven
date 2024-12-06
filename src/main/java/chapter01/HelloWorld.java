@@ -7,7 +7,7 @@ package chapter01;
 //    public static void main(String[] args) { LocalTime currentTime = new LocalTime();
 //		  System.out.println("keqian's log: The current local time is: " + currentTime);
 //
-//        Greeter greeter = new Greeter();
+//        Greeter greete∂r = new Greeter();
 //        System.out.println(greeter.sayHello());
 //    }
 //}

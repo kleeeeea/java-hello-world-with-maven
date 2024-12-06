@@ -1,19 +1,19 @@
 package oop_tut.com.atguigu02.memory;
 
 /**
- * Perosnç±»å¯¹åº”çš„æµ‹è¯•ç±»
+ * PerosnÀà¶ÔÓ¦µÄ²âÊÔÀà
  *
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 14:38
  */
 public class PersonTest {
     public static void main(String[] args) {
 
-        //åˆ›å»ºå¯¹è±¡ã€ç±»çš„å®ä¾‹åŒ–
+        //´´½¨¶ÔÏó¡¢ÀàµÄÊµÀı»¯
         Person p1 = new Person();
 
-        //é€šè¿‡å¯¹è±¡è°ƒç”¨å±æ€§æˆ–æ–¹æ³•
-        p1.name = "æ°å…‹";
+        //Í¨¹ı¶ÔÏóµ÷ÓÃÊôĞÔ»ò·½·¨
+        p1.name = "½Ü¿Ë";
         p1.age = 24;
         p1.gender = 'a';
 
@@ -22,11 +22,11 @@ public class PersonTest {
 
         p1.eat();
         p1.sleep(8);
-        p1.interests("ç”»ç”»");
+        p1.interests("»­»­");
 
-        //å†åˆ›å»ºPersonç±»çš„ä¸€ä¸ªå®ä¾‹
+        //ÔÙ´´½¨PersonÀàµÄÒ»¸öÊµÀı
         Person p2 = new Person();
-        p2.name = "éœ²ä¸";
+        p2.name = "Â¶Ë¿";
         p2.age = 18;
         p2.gender = 'a';
 

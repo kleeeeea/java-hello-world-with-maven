@@ -1,29 +1,29 @@
 package oop_tut.com.atguigu01.oop;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 16:29
  */
-public class PhoneTest { //æ˜¯Phoneç±»çš„æµ‹è¯•ç±»
+public class PhoneTest { //ÊÇPhoneÀàµÄ²âÊÔÀà
     public static void main(String[] args) {
 
 
-        //å¤ä¹ ï¼šæ•°æ®ç±»å‹ å˜é‡å = å˜é‡å€¼
+        //¸´Ï°£ºÊı¾İÀàĞÍ ±äÁ¿Ãû = ±äÁ¿Öµ
 //        Scanner scann = new Scanner(System.in);
 
-        //åˆ›å»ºPhoneçš„å¯¹è±¡
+        //´´½¨PhoneµÄ¶ÔÏó
         Phone p1 = new Phone();
 
-        //é€šè¿‡Phoneçš„å¯¹è±¡ï¼Œè°ƒç”¨å…¶å†…éƒ¨å£°æ˜çš„å±æ€§æˆ–æ–¹æ³•
-        //æ ¼å¼ï¼š"å¯¹è±¡.å±æ€§" æˆ– "å¯¹è±¡.æ–¹æ³•"
+        //Í¨¹ıPhoneµÄ¶ÔÏó£¬µ÷ÓÃÆäÄÚ²¿ÉùÃ÷µÄÊôĞÔ»ò·½·¨
+        //¸ñÊ½£º"¶ÔÏó.ÊôĞÔ" »ò "¶ÔÏó.·½·¨"
         p1.name = "huawei mate50";
         p1.price = 6999;
 
         System.out.println("name = " + p1.name + ", price = " + p1.price);
 
-        //è°ƒç”¨æ–¹æ³•
+        //µ÷ÓÃ·½·¨
         p1.call();
-        p1.sendMessage("æœ‰å†…é¬¼ï¼Œç»ˆæ­¢äº¤æ˜“");
+        p1.sendMessage("ÓĞÄÚ¹í£¬ÖÕÖ¹½»Ò×");
         p1.playGame();
     }
 }

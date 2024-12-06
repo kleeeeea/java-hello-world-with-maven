@@ -1,7 +1,7 @@
 package oop_tut.com.atguigu03.field_method.field;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 20:07
  */
 public class FieldTest {
@@ -20,25 +20,26 @@ public class FieldTest {
 }
 
 class Person{
-    //å±æ€§(æˆ–æˆå‘˜å˜é‡ï¼‰
+    //ÊôĞÔ(»ò³ÉÔ±±äÁ¿£©
     String name;
     int age;
     char gender;
 
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        String food = "å®«ä¿é¸¡ä¸"; //å±€éƒ¨å˜é‡
-        System.out.println("æˆ‘å–œæ¬¢åƒ" + food);
+        String food = "¹¬±£¼¦¶¡"; //¾Ö²¿±äÁ¿
+//        String food;
+        System.out.println("ÎÒÏ²»¶³Ô" + food);
     }
 
-    public void sleep(int hour){ //å½¢å‚ï¼šå±äºå±€éƒ¨å˜é‡
-        System.out.println("äººä¸èƒ½å°‘äº" + hour + "å°æ—¶çš„ç¡çœ ");
+    public void sleep(int hour){ //ĞÎ²Î£ºÊôÓÚ¾Ö²¿±äÁ¿
+        System.out.println("ÈË²»ÄÜÉÙÓÚ" + hour + "Ğ¡Ê±µÄË¯Ãß");
 
-        //ç¼–è¯‘ä¸é€šè¿‡ï¼Œå› ä¸ºè¶…å‡ºäº†foodå˜é‡çš„ä½œç”¨åŸŸ
-//        System.out.println("æˆ‘å–œæ¬¢åƒ" + food);
+        //±àÒë²»Í¨¹ı£¬ÒòÎª³¬³öÁËfood±äÁ¿µÄ×÷ÓÃÓò
+//        System.out.println("ÎÒÏ²»¶³Ô" + food);
 
-        //ç¼–è¯‘é€šè¿‡ã€‚
+        //±àÒëÍ¨¹ı¡£
         System.out.println("name = " + name);
     }
 

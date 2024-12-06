@@ -1,29 +1,29 @@
 package oop_tut.com.atguigu01.oop;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 16:26
  */
 public class Phone {
 
 
 
-    //å±æ€§
-    String name;//å“ç‰Œ
-    double price;//ä»·æ ¼
+    //ÊôĞÔ
+    String name;//Æ·ÅÆ
+    double price;//¼Û¸ñ
 
 
-    //æ–¹æ³•
+    //·½·¨
     public void call(){
-        System.out.println("æ‰‹æœºèƒ½å¤Ÿæ‹¨æ‰“ç”µè¯");
+        System.out.println("ÊÖ»úÄÜ¹»²¦´òµç»°");
     }
 
     public void sendMessage(String message){
-        System.out.println("å‘é€ä¿¡æ¯ï¼š" + message);
+        System.out.println("·¢ËÍĞÅÏ¢£º" + message);
     }
 
     public void playGame(){
-        System.out.println("æ‰‹æœºå¯ä»¥ç©æ¸¸æˆ");
+        System.out.println("ÊÖ»ú¿ÉÒÔÍæÓÎÏ·");
     }
 
 }
