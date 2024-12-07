@@ -18,14 +18,14 @@ public class StudentTest {
 
         System.out.println();
         s1.show2();
-
-        System.out.println(s1.name);
+//
+//        System.out.println(s1.name);
 
         //************************
         System.out.println();
 
         Student s2 = new Student();
-
+//
         System.out.println("***************");
 
         Student s3 = new Student("Tom",12);

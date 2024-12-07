@@ -4,21 +4,21 @@ package oop2.com.atguigu03._extends;
  * ClassName: Person
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:08
  * @Version 1.0
  */
 public class Person {
-    //å±æ€§
+    //ÊôĞÔ
     String name;
     private int age;
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
     }
     public void sleep(){
-        System.out.println("äººç¡è§‰");
+        System.out.println("ÈËË¯¾õ");
     }
 
     public void show(){

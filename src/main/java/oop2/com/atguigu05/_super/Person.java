@@ -4,16 +4,16 @@ package oop2.com.atguigu05._super;
  * ClassName: Person
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:08
  * @Version 1.0
  */
 public class Person {
-    //å±æ€§
+    //ÊôĞÔ
     String name;
     private int age;
 
-    int id = 1001;//èº«ä»½è¯å·
+    int id = 1001;//Éí·İÖ¤ºÅ
 
     public Person() {
 
@@ -31,16 +31,16 @@ public class Person {
         this.id = id;
     }
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
     }
     public void sleep(){
-        System.out.println("äººç¡è§‰");
+        System.out.println("ÈËË¯¾õ");
     }
 
     public void doSport(){
-        System.out.println("äººè¿åŠ¨");
+        System.out.println("ÈËÔË¶¯");
     }
 
     public int getAge() {

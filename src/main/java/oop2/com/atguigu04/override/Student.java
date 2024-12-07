@@ -4,7 +4,7 @@ package oop2.com.atguigu04.override;
  * ClassName: Student
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:08
  * @Version 1.0
  */
@@ -14,18 +14,18 @@ public class Student extends Person {
 
 
     public void study(){
-        System.out.println("å­¦ç”Ÿå­¦ä¹ ");
+        System.out.println("Ñ§ÉúÑ§Ï°");
     }
 
     public void eat(){
-        System.out.println("å­¦ç”Ÿåº”è¯¥å¤šåƒæœ‰è¥å…»çš„é£Ÿç‰©");
+        System.out.println("Ñ§ÉúÓ¦¸Ã¶à³ÔÓĞÓªÑøµÄÊ³Îï");
     }
 
     public void show1(){
         System.out.println("age : " + getAge());
 
     }
-    //é‡å†™çš„é’ˆå¯¹äºè¿”å›å€¼çš„æµ‹è¯•
+    //ÖØĞ´µÄÕë¶ÔÓÚ·µ»ØÖµµÄ²âÊÔ
     public int info(){
         return 1;
     }
@@ -35,13 +35,13 @@ public class Student extends Person {
     }
 
 //    public void sleep(){
-//        System.out.println("å­¦ç”Ÿåº”è¯¥å¤šç¡ï¼Œå…»å¤§è„‘");
+//        System.out.println("Ñ§ÉúÓ¦¸Ã¶àË¯£¬Ñø´óÄÔ");
 //    }
 
 
     @Override
     public void sleep() {
-        System.out.println("å­¦ç”Ÿåº”è¯¥å¤šç¡ï¼Œå…»å¤§è„‘");
+        System.out.println("Ñ§ÉúÓ¦¸Ã¶àË¯£¬Ñø´óÄÔ");
 
     }
 }

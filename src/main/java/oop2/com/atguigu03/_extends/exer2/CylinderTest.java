@@ -4,7 +4,7 @@ package oop2.com.atguigu03._extends.exer2;
  * ClassName: CylinderTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 10:04
  * @Version 1.0
  */
@@ -16,9 +16,9 @@ public class CylinderTest {
         cy.setRadius(2.3);
         cy.setLength(1.4);
 
-        System.out.println("åœ†æŸ±çš„ä½“ç§¯ä¸ºï¼š" + cy.findVolume());
+        System.out.println("Ô²ÖùµÄÌå»ıÎª£º" + cy.findVolume());
 
-        System.out.println("åœ†æŸ±çš„åº•é¢ç§¯ï¼š" + cy.findArea());
+        System.out.println("Ô²ÖùµÄµ×Ãæ»ı£º" + cy.findArea());
 
     }
 }

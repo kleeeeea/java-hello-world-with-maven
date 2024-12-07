@@ -4,35 +4,35 @@ package oop2.com.atguigu05._super;
  * ClassName: Student
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:08
  * @Version 1.0
  */
 public class Student extends Person {
-    //å±æ€§
+    //ÊôĞÔ
     String school;
 
-    int id = 1002;//å­¦å·
+    int id = 1002;//Ñ§ºÅ
 
     public void setSchool(String school){
         this.school = school;
     }
 
-    //æ–¹æ³•
+    //·½·¨
     public void study(){
-        System.out.println("å­¦ç”Ÿå­¦ä¹ ");
+        System.out.println("Ñ§ÉúÑ§Ï°");
     }
 
     public void eat(){
-        System.out.println("å­¦ç”Ÿå¤šåƒæœ‰è¥å…»çš„é£Ÿç‰©");
+        System.out.println("Ñ§Éú¶à³ÔÓĞÓªÑøµÄÊ³Îï");
     }
     public void sleep(){
-        System.out.println("å­¦ç”Ÿä¿è¯æ¯å¤©ä¸ä½äº10ä¸ªå°æ—¶çš„ç¡çœ ");
+        System.out.println("Ñ§Éú±£Ö¤Ã¿Ìì²»µÍÓÚ10¸öĞ¡Ê±µÄË¯Ãß");
     }
 
-    //æµ‹è¯•superè°ƒç”¨æ–¹æ³•ã€å±æ€§
+    //²âÊÔsuperµ÷ÓÃ·½·¨¡¢ÊôĞÔ
     public void show(){
-        eat(); //çœç•¥äº†this
+        eat(); //Ê¡ÂÔÁËthis
         this.eat();
 
         super.eat();
@@ -57,16 +57,17 @@ public class Student extends Person {
         System.out.println(super.name);
     }
 
-    //æµ‹è¯•superè°ƒç”¨çˆ¶ç±»çš„æ„é€ å™¨
+    //²âÊÔsuperµ÷ÓÃ¸¸ÀàµÄ¹¹ÔìÆ÷
     public Student(){
         super();
 //        this("Tom",12);
         System.out.println("Student()...");
     }
     public Student(String name,int age){
+        System.out.print(age); System.out.println(" | String name,int age | oop2/com/atguigu05/_super/Student.java:67");
 //        setAge(age);
 //        super.name = name;
-        super(name,age);
+//        super(name,age);
     }
 
 }

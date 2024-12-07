@@ -3,21 +3,21 @@ package oop2.com.atguigu01._this.exer2;
 /**
  * ClassName: Bank
  * Description:
- *      é“¶è¡Œç±»
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *      ÒøĞĞÀà
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:32
  * @Version 1.0
  */
 public class Bank {
-    private Customer[] customers;//ç”¨äºä¿å­˜å¤šä¸ªå®¢æˆ·
-    private int numberOfCustomer;//ç”¨äºè®°å½•å­˜å‚¨çš„å®¢æˆ·çš„ä¸ªæ•°
+    private Customer[] customers;//ÓÃÓÚ±£´æ¶à¸ö¿Í»§
+    private int numberOfCustomer;//ÓÃÓÚ¼ÇÂ¼´æ´¢µÄ¿Í»§µÄ¸öÊı
 
     public Bank(){
         customers = new Customer[10];
     }
 
     /**
-     * å°†æŒ‡å®šå§“åçš„å®¢æˆ·ä¿å­˜åœ¨é“¶è¡Œçš„å®¢æˆ·åˆ—è¡¨ä¸­
+     * ½«Ö¸¶¨ĞÕÃûµÄ¿Í»§±£´æÔÚÒøĞĞµÄ¿Í»§ÁĞ±íÖĞ
      * @param f
      * @param l
      */
@@ -25,12 +25,12 @@ public class Bank {
         Customer cust = new Customer(f,l);
 //        customers[numberOfCustomer] = cust;
 //        numberOfCustomer++;
-        //æˆ–
+        //»ò
         customers[numberOfCustomer++] = cust;
     }
 
     /**
-     * è·å–å®¢æˆ·åˆ—è¡¨ä¸­å­˜å‚¨çš„å®¢æˆ·çš„ä¸ªæ•°
+     * »ñÈ¡¿Í»§ÁĞ±íÖĞ´æ´¢µÄ¿Í»§µÄ¸öÊı
      * @return
      */
     public int getNumOfCustomers(){
@@ -38,7 +38,7 @@ public class Bank {
     }
 
     /**
-     * è·å–æŒ‡å®šç´¢å¼•ä½ç½®ä¸Šçš„å®¢æˆ·
+     * »ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃÉÏµÄ¿Í»§
      * @param index
      * @return
      */

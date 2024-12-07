@@ -3,13 +3,13 @@ package oop2.com.atguigu01._this.exer2;
 /**
  * ClassName: Account
  * Description:
- *      è´¦æˆ·ç±»
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *      ÕË»§Àà
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:22
  * @Version 1.0
  */
 public class Account {
-    private double balance;//ä½™é¢
+    private double balance;//Óà¶î
 
     public Account(double init_balance) {
         this.balance = init_balance;
@@ -19,21 +19,21 @@ public class Account {
         return balance;
     }
 
-    //å­˜é’±
+    //´æÇ®
     public void deposit(double amt){
         if(amt > 0){
             balance += amt;
-            System.out.println("æˆåŠŸå­˜å…¥ï¼š" + amt);
+            System.out.println("³É¹¦´æÈë£º" + amt);
         }
     }
 
-    //å–é’±
+    //È¡Ç®
     public void withdraw(double amt){
         if(balance >= amt && amt > 0){
             balance -= amt;
-            System.out.println("æˆåŠŸå–å‡ºï¼š" + amt);
+            System.out.println("³É¹¦È¡³ö£º" + amt);
         }else{
-            System.out.println("å–æ¬¾æ•°é¢æœ‰è¯¯æˆ–ä½™é¢ä¸è¶³");
+            System.out.println("È¡¿îÊı¶îÓĞÎó»òÓà¶î²»×ã");
         }
     }
 }
