@@ -8,7 +8,12 @@ import oop_tut.com.atguigu05.method_more._04recursion.RecursionTest;
 import oop_tut.com.atguigu05.method_more._04recursion.exer2.RabbitExer;
 
 import java.lang.reflect.Field;
-import java.util.*;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+//import java.util.*;
 
 import static java.lang.System.out;
 import static java.lang.Math.PI;
@@ -44,7 +49,7 @@ public class PackageImportTest {
         RabbitExer exer = null;
 
         //Date可以使用import的方式指明
-        Date date = new Date();
+//        Date date = new Date();
 
         //使用全类名的方式
         java.sql.Date date1 = new java.sql.Date(121231231L);

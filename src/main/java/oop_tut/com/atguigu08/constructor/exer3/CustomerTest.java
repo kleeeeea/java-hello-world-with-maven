@@ -3,34 +3,34 @@ package oop_tut.com.atguigu08.constructor.exer3;
 /**
  * ClassName: CustomerTest
  * Description:
- *      ï¼ˆ1ï¼‰åˆ›å»ºä¸€ä¸ªCustomer ï¼Œåå­—å« Jane Smith, ä»–æœ‰ä¸€ä¸ªè´¦å·ä¸º1000ï¼Œä½™é¢ä¸º2000å…ƒï¼Œå¹´åˆ©ç‡ä¸º 1.23ï¼… çš„è´¦æˆ·ã€‚
- *      ï¼ˆ2ï¼‰å¯¹Jane Smithæ“ä½œã€‚
- *          å­˜å…¥ 100 å…ƒï¼Œå†å–å‡º960å…ƒã€‚å†å–å‡º2000å…ƒã€‚
- *          æ‰“å°å‡ºJane Smith çš„åŸºæœ¬ä¿¡æ¯ï¼š
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *      £¨1£©´´½¨Ò»¸öCustomer £¬Ãû×Ö½Ğ Jane Smith, ËûÓĞÒ»¸öÕËºÅÎª1000£¬Óà¶îÎª2000Ôª£¬ÄêÀûÂÊÎª 1.23£¥ µÄÕË»§¡£
+ *      £¨2£©¶ÔJane Smith²Ù×÷¡£
+ *          ´æÈë 100 Ôª£¬ÔÙÈ¡³ö960Ôª¡£ÔÙÈ¡³ö2000Ôª¡£
+ *          ´òÓ¡³öJane Smith µÄ»ù±¾ĞÅÏ¢£º
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:04
  * @Version 1.0
  */
 public class CustomerTest {
     public static void main(String[] args) {
-        //åˆ›å»ºCustomerå®ä¾‹
+        //´´½¨CustomerÊµÀı
         Customer customer = new Customer("Jane","Smith");
 
 //        Account account = new Account(1000,2000,0.0123);
 //        customer.setAccount(account);
-        //æˆ–
+        //»ò
         customer.setAccount(new Account(1000,2000,0.0123));
 
 
 
-        //é’ˆå¯¹äºå®¢æˆ·çš„è´¦æˆ·è¿›è¡Œå–é’±ã€å­˜é’±çš„æ“ä½œ
+        //Õë¶ÔÓÚ¿Í»§µÄÕË»§½øĞĞÈ¡Ç®¡¢´æÇ®µÄ²Ù×÷
         customer.getAccount().deposit(100);
         customer.getAccount().withdraw(960);
         customer.getAccount().withdraw(2000);
 
-        //è¾“å‡ºå®¢æˆ·ä¿¡æ¯
+        //Êä³ö¿Í»§ĞÅÏ¢
         //Customer [Smith, Jane] has a account: id is 1000,
-        // annualInterestRate is 1.23ï¼…, balance is 1140.0
+        // annualInterestRate is 1.23£¥, balance is 1140.0
         System.out.println("Customer [" + customer.getLastName() + "," + customer.getFirstName() +
                 "] has a account:id is " + customer.getAccount().getId() + ",annualInterestRate is " +
                 customer.getAccount().getAnnualInterestRate()*100 + "%,balance is " +
@@ -38,10 +38,10 @@ public class CustomerTest {
 
 
         /*
-         * å…³äºåŒ¿åå¯¹è±¡
+         * ¹ØÓÚÄäÃû¶ÔÏó
          *
-         * 1. åŒ¿åå¯¹è±¡å¾€å¾€åªèƒ½è¢«è°ƒç”¨ä¸€æ¬¡
-         * 2. åŒ¿åå¯¹è±¡å¸¸å¸¸ä½œä¸ºå®å‚ä¼ é€’ç»™æ–¹æ³•çš„å½¢å‚ã€‚
+         * 1. ÄäÃû¶ÔÏóÍùÍùÖ»ÄÜ±»µ÷ÓÃÒ»´Î
+         * 2. ÄäÃû¶ÔÏó³£³£×÷ÎªÊµ²Î´«µİ¸ø·½·¨µÄĞÎ²Î¡£
          * */
         new Account(1001,2000,0.0123).withdraw(1000);
         System.out.println(new Account(1001, 2000, 0.0123).getBalance());

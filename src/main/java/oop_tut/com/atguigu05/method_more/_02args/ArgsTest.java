@@ -19,7 +19,7 @@ public class ArgsTest {
 
 
     public void print(int ... nums){
-        System.out.println("1111");
+        System.out.println("public void print(int ... nums");
 
         for (int i = 0; i < nums.length; i++) {
             System.out.println(nums[i]);

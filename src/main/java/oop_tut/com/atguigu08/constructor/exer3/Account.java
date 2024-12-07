@@ -4,14 +4,14 @@ package oop_tut.com.atguigu08.constructor.exer3;
  * ClassName: Account
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 8:52
  * @Version 1.0
  */
 public class Account {
-    private int id;//è´¦å·
-    private double balance; //ä½™é¢
-    private double annualInterestRate;//å¹´åˆ©ç‡
+    private int id;//ÕËºÅ
+    private double balance; //Óà¶î
+    private double annualInterestRate;//ÄêÀûÂÊ
 
     public Account(int i, double b, double a) {
         id = i;
@@ -43,21 +43,21 @@ public class Account {
         return annualInterestRate;
     }
 
-    //å–é’±
+    //È¡Ç®
     public void withdraw(double amount){
         if(amount <= balance && amount > 0){
             balance -= amount;
-            System.out.println("æˆåŠŸå–å‡ºï¼š" + amount);
+            System.out.println("³É¹¦È¡³ö£º" + amount);
         }else{
-            System.out.println("ä½™é¢ä¸è¶³ï¼Œå–æ¬¾å¤±è´¥");
+            System.out.println("Óà¶î²»×ã£¬È¡¿îÊ§°Ü");
         }
 
     }
-    //å­˜æ¬¾
+    //´æ¿î
     public void deposit(double amount){
         if(amount > 0){
             balance += amount;
-            System.out.println("æˆåŠŸå­˜å…¥ï¼š" + amount);
+            System.out.println("³É¹¦´æÈë£º" + amount);
         }
     }
 

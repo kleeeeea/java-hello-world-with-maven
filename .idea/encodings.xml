@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/no_ide" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/oop_tut/com/atguigu01/oop/Phone.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/oop_tut/com/atguigu01/oop/PhoneTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/oop_tut/com/atguigu02/memory/Person.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/oop_tut/com/atguigu02/memory/PersonTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/oop_tut/com/atguigu03/field_method/field/FieldTest.java" charset="GBK" />
   </component>
 </project>

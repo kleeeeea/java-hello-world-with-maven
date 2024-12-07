@@ -4,7 +4,7 @@ package oop_tut.com.atguigu07.encapsulation;
  * ClassName: AnimalTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:34
  * @Version 1.0
  */
@@ -13,12 +13,12 @@ public class AnimalTest {
 
         Animal animal1 = new Animal();
 
-        animal1.name = "é‡‘èŸ¾";
-        //å› ä¸ºlegså£°æ˜ä¸ºprivateï¼Œæ˜¯ç§æœ‰çš„ï¼Œå‡ºäº†Animalç±»ä¹‹å¤–å°±ä¸èƒ½è°ƒç”¨äº†ã€‚
+        animal1.name = "½ğó¸";
+        //ÒòÎªlegsÉùÃ÷Îªprivate£¬ÊÇË½ÓĞµÄ£¬³öÁËAnimalÀàÖ®Íâ¾Í²»ÄÜµ÷ÓÃÁË¡£
 //        animal1.legs = 4;
 //        animal1.legs = -4;
 
-        //åªèƒ½é€šè¿‡setLegs()ï¼Œé—´æ¥çš„å¯¹legså±æ€§è¿›è¡Œèµ‹å€¼ã€‚
+        //Ö»ÄÜÍ¨¹ısetLegs()£¬¼ä½ÓµÄ¶ÔlegsÊôĞÔ½øĞĞ¸³Öµ¡£
         animal1.setLegs(2);
         animal1.setLegs(-2);
 
@@ -31,30 +31,30 @@ public class AnimalTest {
     }
 }
 
-class Animal{ //åŠ¨ç‰©
-    //å±æ€§
-    String name; //åå­—
-    private int legs;//è…¿çš„ä¸ªæ•°
+class Animal{ //¶¯Îï
+    //ÊôĞÔ
+    String name; //Ãû×Ö
+    private int legs;//ÍÈµÄ¸öÊı
 
 
 
-    //æ–¹æ³•
-    //è®¾ç½®legsçš„å±æ€§å€¼
+    //·½·¨
+    //ÉèÖÃlegsµÄÊôĞÔÖµ
     public void setLegs(int l){
         if(l >= 0 && l % 2 == 0){
             legs = l;
         }else{
-            System.out.println("ä½ è¾“å…¥çš„æ•°æ®éæ³•");
+            System.out.println("ÄãÊäÈëµÄÊı¾İ·Ç·¨");
         }
     }
-    //è·å–legsçš„å±æ€§å€¼
+    //»ñÈ¡legsµÄÊôĞÔÖµ
     public int getLegs(){
         return legs;
     }
 
 
     public void eat(){
-        System.out.println("åŠ¨ç‰©è§…é£Ÿ");
+        System.out.println("¶¯ÎïÃÙÊ³");
     }
 }
 

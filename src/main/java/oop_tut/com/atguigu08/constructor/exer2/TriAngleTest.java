@@ -4,25 +4,25 @@ package oop_tut.com.atguigu08.constructor.exer2;
  * ClassName: TriAngleTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 16:52
  * @Version 1.0
  */
 public class TriAngleTest {
     public static void main(String[] args) {
-        //åˆ›å»ºTriAngleçš„å®ä¾‹1
+        //´´½¨TriAngleµÄÊµÀı1
         TriAngle t1 = new TriAngle();
 
         t1.setHeight(2.3);
         t1.setBase(3.4);
 
-        System.out.println("é¢ç§¯ä¸ºï¼š" + t1.findArea());
+        System.out.println("Ãæ»ıÎª£º" + t1.findArea());
 
-        //åˆ›å»ºTriAngleçš„å®ä¾‹2
+        //´´½¨TriAngleµÄÊµÀı2
         TriAngle t2 = new TriAngle(2.4,4.5);
 
-        System.out.println("åº•è¾¹é•¿ä¸ºï¼š" + t2.getBase());
-        System.out.println("é«˜ä¸ºï¼š" + t2.getHeight());
-        System.out.println("é¢ç§¯ä¸ºï¼š" + t2.findArea());
+        System.out.println("µ×±ß³¤Îª£º" + t2.getBase());
+        System.out.println("¸ßÎª£º" + t2.getHeight());
+        System.out.println("Ãæ»ıÎª£º" + t2.findArea());
     }
 }

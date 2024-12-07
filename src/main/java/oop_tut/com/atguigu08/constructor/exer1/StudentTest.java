@@ -4,17 +4,17 @@ package oop_tut.com.atguigu08.constructor.exer1;
  * ClassName: StudentTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 16:45
  * @Version 1.0
  */
 public class StudentTest {
     public static void main(String[] args) {
 
-        Student s1 = new Student("åˆ˜å¼ºä¸œ",48,"ä¸­å›½äººæ°‘å¤§å­¦","ç¤¾ä¼šå­¦");
+        Student s1 = new Student("ÁõÇ¿¶«",48,"ÖĞ¹úÈËÃñ´óÑ§","Éç»áÑ§");
         System.out.println(s1.getInfo());
 
-        Student s2 = new Student("å¥¶èŒ¶å¦¹å¦¹",28,"æ¸…åå¤§å­¦");
+        Student s2 = new Student("ÄÌ²èÃÃÃÃ",28,"Çå»ª´óÑ§");
         System.out.println(s2.getInfo());
     }
 }

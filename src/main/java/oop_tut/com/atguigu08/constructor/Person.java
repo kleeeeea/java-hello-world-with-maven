@@ -4,21 +4,21 @@ package oop_tut.com.atguigu08.constructor;
  * ClassName: Person
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 16:20
  * @Version 1.0
  */
 class Person {
-    //å±æ€§
+    //ÊôĞÔ
     String name;
     int age;
 
-    //æ„é€ å™¨
+    //¹¹ÔìÆ÷
     public Person(){
         System.out.println("Person()....");
     }
 
-    //å£°æ˜å…¶å®ƒçš„æ„é€ å™¨
+    //ÉùÃ÷ÆäËüµÄ¹¹ÔìÆ÷
     public Person(int a){
         age = a;
     }
@@ -33,12 +33,12 @@ class Person {
     }
 
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
     }
     public void sleep(int hour){
-        System.out.println("æ¯å¤©ç¡çœ " + hour + "å°æ—¶");
+        System.out.println("Ã¿ÌìË¯Ãß" + hour + "Ğ¡Ê±");
     }
 
 }

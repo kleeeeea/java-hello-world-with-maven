@@ -4,19 +4,19 @@ package oop_tut.com.atguigu08.constructor.exer1;
  * ClassName: Student
  * Description:
  *
- *  (1)å®šä¹‰Studentç±»,æœ‰4ä¸ªå±æ€§ï¼š
+ *  (1)¶¨ÒåStudentÀà,ÓĞ4¸öÊôĞÔ£º
  *   String name;
  *   int age;
  *   String school;
  *   String major;
  *
- * (2)å®šä¹‰Studentç±»çš„3ä¸ªæ„é€ å™¨:
+ * (2)¶¨ÒåStudentÀàµÄ3¸ö¹¹ÔìÆ÷:
  *
- * - ç¬¬ä¸€ä¸ªæ„é€ å™¨Student(String n, int a)è®¾ç½®ç±»çš„nameå’Œageå±æ€§ï¼›
- * - ç¬¬äºŒä¸ªæ„é€ å™¨Student(String n, int a, String s)è®¾ç½®ç±»çš„name, age å’Œschoolå±æ€§ï¼›
- * - ç¬¬ä¸‰ä¸ªæ„é€ å™¨Student(String n, int a, String s, String m)è®¾ç½®ç±»çš„name, age ,schoolå’Œmajorå±æ€§ï¼›
+ * - µÚÒ»¸ö¹¹ÔìÆ÷Student(String n, int a)ÉèÖÃÀàµÄnameºÍageÊôĞÔ£»
+ * - µÚ¶ş¸ö¹¹ÔìÆ÷Student(String n, int a, String s)ÉèÖÃÀàµÄname, age ºÍschoolÊôĞÔ£»
+ * - µÚÈı¸ö¹¹ÔìÆ÷Student(String n, int a, String s, String m)ÉèÖÃÀàµÄname, age ,schoolºÍmajorÊôĞÔ£»
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 16:42
  * @Version 1.0
  */
@@ -25,7 +25,7 @@ public class Student {
     String name;
     int age;
     String school;
-    String major;//ä¸“ä¸š
+    String major;//×¨Òµ
 
     public Student(String n,int a){
         name = n;

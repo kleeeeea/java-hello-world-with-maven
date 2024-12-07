@@ -3,7 +3,7 @@
 package oop_tut.com.atguigu03.field_method.method;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 19:01
  */
 public class MethodTest {
@@ -17,7 +17,7 @@ public class MethodTest {
 
         p1.sleep(8);
 
-        String info = p1.interests("ç¼–ç¨‹");
+        String info = p1.interests("±à³Ì");
         System.out.println(info);
     }
 
@@ -27,14 +27,14 @@ public class MethodTest {
 
 class Person{
 
-    //å±æ€§
+    //ÊôĞÔ
     String name;
     int age;
     char gender;
 
-    //æ–¹æ³•
+    //·½·¨
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
 
         sleep(8);
 
@@ -42,11 +42,11 @@ class Person{
     }
 
     public void sleep(int hour){
-        System.out.println("äººè‡³å°‘æ¯å¤©ç¡çœ " + hour + "å°æ—¶");
+        System.out.println("ÈËÖÁÉÙÃ¿ÌìË¯Ãß" + hour + "Ğ¡Ê±");
     }
 
     public String interests(String hobby){
-        String info = "æˆ‘çš„çˆ±å¥½æ˜¯" + hobby;
+        String info = "ÎÒµÄ°®ºÃÊÇ" + hobby;
         System.out.println(info);
 //        return info;
 
@@ -61,7 +61,7 @@ class Person{
         System.out.println("Person info()");
 //        info();
 
-        //æ–¹æ³•å†…ä¸èƒ½å®šä¹‰æ–¹æ³•ï¼
+        //·½·¨ÄÚ²»ÄÜ¶¨Òå·½·¨£¡
 //        public void show(){
 //
 //        }
@@ -71,9 +71,9 @@ class Person{
         for(int i = 1;i <= targetNumber;i++){
 
             if(i == 4){
-                return ; //ç”¨äºç»“æŸæ–¹æ³•ã€‚
-                //returnåé¢ä¸èƒ½å£°æ˜æ‰§è¡Œè¯­å¥
-//                System.out.println("è¿ªä¸½çƒ­å·´è¦çº¦æˆ‘åƒé¥­");
+                return ; //ÓÃÓÚ½áÊø·½·¨¡£
+                //returnºóÃæ²»ÄÜÉùÃ÷Ö´ĞĞÓï¾ä
+//                System.out.println("µÏÀöÈÈ°ÍÒªÔ¼ÎÒ³Ô·¹");
             }
 
             System.out.println(i);
