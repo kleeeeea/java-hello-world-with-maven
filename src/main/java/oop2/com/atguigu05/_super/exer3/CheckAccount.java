@@ -4,12 +4,12 @@ package oop2.com.atguigu05._super.exer3;
  * ClassName: CheckAccount
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:35
  * @Version 1.0
  */
 public class CheckAccount extends Account{
-    private double overdraft;//å¯é€æ”¯é™é¢
+    private double overdraft;//¿ÉÍ¸Ö§ÏŞ¶î
 
     public CheckAccount(int id, double balance, double annualInterestRate){
         super(id,balance,annualInterestRate);
@@ -29,20 +29,20 @@ public class CheckAccount extends Account{
     }
 
     /**
-     * é’ˆå¯¹äºå¯é€æ”¯çš„è´¦æˆ·çš„å–é’±çš„æ“ä½œ
-     * @param amount  è¦å–çš„é’±æ•°
+     * Õë¶ÔÓÚ¿ÉÍ¸Ö§µÄÕË»§µÄÈ¡Ç®µÄ²Ù×÷
+     * @param amount  ÒªÈ¡µÄÇ®Êı
      */
     public void withdraw(double amount){
         if(getBalance() >= amount){
-            //é”™è¯¯çš„ï¼š
+            //´íÎóµÄ£º
 //            getBalance() = getBalance() - amount;
-            //æ­£ç¡®çš„
+            //ÕıÈ·µÄ
             super.withdraw(amount);
         }else if(getBalance() + overdraft >= amount){
             overdraft -= amount - getBalance();
             super.withdraw(getBalance());
         }else{
-            System.out.println("è¶…è¿‡å¯é€æ”¯é™é¢");
+            System.out.println("³¬¹ı¿ÉÍ¸Ö§ÏŞ¶î");
         }
     }
 }

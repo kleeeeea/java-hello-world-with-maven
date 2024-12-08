@@ -1,15 +1,15 @@
 package oop2.com.atguigu07.object;
-//Objectç±»çš„clone()çš„ä½¿ç”¨
+//ObjectÀàµÄclone()µÄÊ¹ÓÃ
 public class CloneTest {
 	public static void main(String[] args) {
-		Animal a1 = new Animal("å°èŠ±");
+		Animal a1 = new Animal("Ğ¡»¨");
 		try {
 			Animal a2 = (Animal) a1.clone();
-			a2.setName("æ¯›æ¯›");
+			a2.setName("Ã«Ã«");
 
-			System.out.println("åŸå§‹å¯¹è±¡ï¼š" + a1);
+			System.out.println("Ô­Ê¼¶ÔÏó£º" + a1);
 			System.out.println("a1[name = " + a1.getName() + "]");
-			System.out.println("cloneä¹‹åçš„å¯¹è±¡ï¼š" + a2);
+			System.out.println("cloneÖ®ºóµÄ¶ÔÏó£º" + a2.toString());
 			System.out.println("a2[name = " + a2.getName() + "]");
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();

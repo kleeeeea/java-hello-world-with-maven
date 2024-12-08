@@ -10,51 +10,51 @@ import java.lang.reflect.Method;
  * ClassName: ReflectionTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:46
  * @Version 1.0
  */
 public class ReflectionTest {
     /*
-    * ä½¿ç”¨åå°„ä¹‹å‰å¯ä»¥æ‰§è¡Œçš„æ“ä½œ
+    * Ê¹ÓÃ·´ÉäÖ®Ç°¿ÉÒÔÖ´ĞĞµÄ²Ù×÷
     * */
     @Test
     public void test1(){
 
-        //1.åˆ›å»ºPersonç±»çš„å®ä¾‹
+        //1.´´½¨PersonÀàµÄÊµÀı
 //        public Person()
         Person p1 = new Person();
         System.out.println(p1);
 
-        //2.è°ƒç”¨å±æ€§
+        //2.µ÷ÓÃÊôĞÔ
         //public int age;
         p1.age = 10;
         System.out.println(p1.age);
 
-        //3.è°ƒç”¨æ–¹æ³•
+        //3.µ÷ÓÃ·½·¨
         //public void show()
         p1.show();
 
     }
 
     /*
-    * ä½¿ç”¨åå°„å®Œæˆä¸Šè¿°çš„æ“ä½œ
+    * Ê¹ÓÃ·´ÉäÍê³ÉÉÏÊöµÄ²Ù×÷
     * */
     @Test
     public void test2() throws Exception{
-        //1.åˆ›å»ºPersonç±»çš„å®ä¾‹
+        //1.´´½¨PersonÀàµÄÊµÀı
 //        public Person()
         Class<Person> clazz = Person.class;
         Person p1 = clazz.newInstance();
         System.out.println(p1);
 
-        //2.è°ƒç”¨å±æ€§
+        //2.µ÷ÓÃÊôĞÔ
         //public int age;
         Field ageField = clazz.getField("age");
         ageField.set(p1,10);
         System.out.println(ageField.get(p1));
 
-        //3.è°ƒç”¨æ–¹æ³•
+        //3.µ÷ÓÃ·½·¨
         //public void show()
         Method showMethod = clazz.getMethod("show");
         showMethod.invoke(p1);
@@ -62,13 +62,13 @@ public class ReflectionTest {
     }
 
     /*
-    * å‡ºäº†Personç±»ä¹‹åï¼Œå°±ä¸èƒ½ç›´æ¥è°ƒç”¨Personç±»ä¸­å£°æ˜çš„privateæƒé™ä¿®é¥°çš„ç»“æ„ï¼ˆå±æ€§ã€æ–¹æ³•ã€æ„é€ å™¨ï¼‰
-    * ä½†æ˜¯ï¼Œæˆ‘ä»¬å¯ä»¥é€šè¿‡åå°„çš„æ–¹å¼ï¼Œè°ƒç”¨Personç±»ä¸­ç§æœ‰çš„ç»“æ„  ---> æš´åŠ›åå°„
+    * ³öÁËPersonÀàÖ®ºó£¬¾Í²»ÄÜÖ±½Óµ÷ÓÃPersonÀàÖĞÉùÃ÷µÄprivateÈ¨ÏŞĞŞÊÎµÄ½á¹¹£¨ÊôĞÔ¡¢·½·¨¡¢¹¹ÔìÆ÷£©
+    * µ«ÊÇ£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ı·´ÉäµÄ·½Ê½£¬µ÷ÓÃPersonÀàÖĞË½ÓĞµÄ½á¹¹  ---> ±©Á¦·´Éä
     *
     * */
     @Test
     public void test3() throws Exception {
-        //1. è°ƒç”¨ç§æœ‰çš„æ„é€ å™¨ï¼Œåˆ›å»ºPersonçš„å®ä¾‹
+        //1. µ÷ÓÃË½ÓĞµÄ¹¹ÔìÆ÷£¬´´½¨PersonµÄÊµÀı
         //private Person(String name, int age)
         Class clazz = Person.class;
         Constructor cons = clazz.getDeclaredConstructor(String.class,int.class);
@@ -76,14 +76,14 @@ public class ReflectionTest {
         Person p1 = (Person) cons.newInstance("Tom",12);
         System.out.println(p1);
 
-        //2. è°ƒç”¨ç§æœ‰çš„å±æ€§
+        //2. µ÷ÓÃË½ÓĞµÄÊôĞÔ
         //private String name;
         Field nameField = clazz.getDeclaredField("name");
         nameField.setAccessible(true);
         nameField.set(p1,"Jerry");
         System.out.println(nameField.get(p1));
 
-        //3. è°ƒç”¨ç§æœ‰çš„æ–¹æ³•
+        //3. µ÷ÓÃË½ÓĞµÄ·½·¨
         //private String showNation(String nation)
         Method showNationMethod = clazz.getDeclaredMethod("showNation",String.class);
         showNationMethod.setAccessible(true);

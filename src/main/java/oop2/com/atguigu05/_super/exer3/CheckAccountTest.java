@@ -3,13 +3,13 @@ package oop2.com.atguigu05._super.exer3;
 /**
  * ClassName: CheckAccountTest
  * Description:
- *      å†™ä¸€ä¸ªç”¨æˆ·ç¨‹åºæµ‹è¯•CheckAccountç±»ã€‚
- *      åœ¨ç”¨æˆ·ç¨‹åºä¸­ï¼Œåˆ›å»ºä¸€ä¸ªè´¦å·ä¸º1122ã€ä½™é¢ä¸º20000ã€å¹´åˆ©ç‡4.5%ï¼Œå¯é€æ”¯é™é¢ä¸º5000å…ƒçš„CheckAccountå¯¹è±¡ã€‚
+ *      Ğ´Ò»¸öÓÃ»§³ÌĞò²âÊÔCheckAccountÀà¡£
+ *      ÔÚÓÃ»§³ÌĞòÖĞ£¬´´½¨Ò»¸öÕËºÅÎª1122¡¢Óà¶îÎª20000¡¢ÄêÀûÂÊ4.5%£¬¿ÉÍ¸Ö§ÏŞ¶îÎª5000ÔªµÄCheckAccount¶ÔÏó¡£
  *
- *       ä½¿ç”¨withdrawæ–¹æ³•ææ¬¾5000å…ƒï¼Œå¹¶æ‰“å°è´¦æˆ·ä½™é¢å’Œå¯é€æ”¯é¢ã€‚
- *       å†ä½¿ç”¨withdrawæ–¹æ³•ææ¬¾18000å…ƒï¼Œå¹¶æ‰“å°è´¦æˆ·ä½™é¢å’Œå¯é€æ”¯é¢ã€‚
- *       å†ä½¿ç”¨withdrawæ–¹æ³•ææ¬¾3000å…ƒï¼Œå¹¶æ‰“å°è´¦æˆ·ä½™é¢å’Œå¯é€æ”¯é¢ã€‚
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *       Ê¹ÓÃwithdraw·½·¨Ìá¿î5000Ôª£¬²¢´òÓ¡ÕË»§Óà¶îºÍ¿ÉÍ¸Ö§¶î¡£
+ *       ÔÙÊ¹ÓÃwithdraw·½·¨Ìá¿î18000Ôª£¬²¢´òÓ¡ÕË»§Óà¶îºÍ¿ÉÍ¸Ö§¶î¡£
+ *       ÔÙÊ¹ÓÃwithdraw·½·¨Ìá¿î3000Ôª£¬²¢´òÓ¡ÕË»§Óà¶îºÍ¿ÉÍ¸Ö§¶î¡£
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:49
  * @Version 1.0
  */
@@ -19,15 +19,15 @@ public class CheckAccountTest {
         CheckAccount checkAccount = new CheckAccount(1122,20000,0.045,5000);
 
         checkAccount.withdraw(5000);
-        System.out.println("æ‚¨çš„è´¦æˆ·ä½™é¢ï¼š" + checkAccount.getBalance());
-        System.out.println("æ‚¨çš„å¯é€æ”¯é¢ï¼š" + checkAccount.getOverdraft());
+        System.out.println("ÄúµÄÕË»§Óà¶î£º" + checkAccount.getBalance());
+        System.out.println("ÄúµÄ¿ÉÍ¸Ö§¶î£º" + checkAccount.getOverdraft());
 
         checkAccount.withdraw(18000);
-        System.out.println("æ‚¨çš„è´¦æˆ·ä½™é¢ï¼š" + checkAccount.getBalance());
-        System.out.println("æ‚¨çš„å¯é€æ”¯é¢ï¼š" + checkAccount.getOverdraft());
+        System.out.println("ÄúµÄÕË»§Óà¶î£º" + checkAccount.getBalance());
+        System.out.println("ÄúµÄ¿ÉÍ¸Ö§¶î£º" + checkAccount.getOverdraft());
 
         checkAccount.withdraw(3000);
-        System.out.println("æ‚¨çš„è´¦æˆ·ä½™é¢ï¼š" + checkAccount.getBalance());
-        System.out.println("æ‚¨çš„å¯é€æ”¯é¢ï¼š" + checkAccount.getOverdraft());
+        System.out.println("ÄúµÄÕË»§Óà¶î£º" + checkAccount.getBalance());
+        System.out.println("ÄúµÄ¿ÉÍ¸Ö§¶î£º" + checkAccount.getOverdraft());
     }
 }

@@ -18,10 +18,10 @@ import java.util.Properties;
  */
 public class ClassLoaderTest {
     /*
-    * 在jdk8中执行如下的代码：
-    * */
+     * 在jdk8中执行如下的代码：
+     * */
     @Test
-    public void test1(){
+    public void test1() {
 
         //获取系统类加载器
         ClassLoader classLoader1 = ClassLoader.getSystemClassLoader();
@@ -51,8 +51,8 @@ public class ClassLoaderTest {
     }
 
     /*
-    * 需求：通过ClassLoader加载指定的配置文件
-    * */
+     * 需求：通过ClassLoader加载指定的配置文件
+     * */
     @Test
     public void test3() throws IOException {
         Properties pros = new Properties();
@@ -60,11 +60,14 @@ public class ClassLoaderTest {
         //通过类的加载器读取的文件的默认的路径为：当前module下的src下
         InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream("info1.properties");
 
+        //        Incorrect Resource Path:
+        //getResourceAsStream() expects a classpath-relative path, not a file system path. In a typical Maven or Gradle project structure, non-Java resource files (like .properties) are usually placed in the src/main/resources directory. At runtime, resources from src/main/resources are automatically placed on the classpath, and you can load them simply by their filename (e.g., "info1.properties").
+        //For example:
         pros.load(is);
 
         String name = pros.getProperty("name");
         String pwd = pros.getProperty("password");
-        System.out.println(name + ":" +pwd);
+        System.out.println(name + ":" + pwd);
     }
 
     //Properties:处理属性文件
@@ -73,14 +76,14 @@ public class ClassLoaderTest {
         Properties pros = new Properties();
 
         //读取的文件的默认路径为：当前的module
-        FileInputStream is = new FileInputStream(new File("info.properties"));
+        FileInputStream is = new FileInputStream(new File("src/main/java/chapter17_reflect_teacher/src/info1.properties"));
 //        FileInputStream is = new FileInputStream(new File("src/info1.properties"));
 
         pros.load(is);
 
         String name = pros.getProperty("name");
         String pwd = pros.getProperty("password");
-        System.out.println(name + ":" +pwd);
+        System.out.println(name + ":" + pwd);
 
     }
 }

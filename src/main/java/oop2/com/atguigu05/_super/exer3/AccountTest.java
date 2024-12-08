@@ -3,10 +3,10 @@ package oop2.com.atguigu05._super.exer3;
 /**
  * ClassName: AccountTest
  * Description:
- *  å†™ä¸€ä¸ªç”¨æˆ·ç¨‹åºæµ‹è¯•Accountç±»ã€‚åœ¨ç”¨æˆ·ç¨‹åºä¸­ï¼Œåˆ›å»ºä¸€ä¸ªè´¦å·ä¸º1122ã€ä½™é¢ä¸º20000ã€å¹´åˆ©ç‡4.5%çš„Accountå¯¹è±¡ã€‚
- *  ä½¿ç”¨withdrawæ–¹æ³•ææ¬¾30000å…ƒï¼Œå¹¶æ‰“å°ä½™é¢ã€‚
- *  å†ä½¿ç”¨withdrawæ–¹æ³•ææ¬¾2500å…ƒï¼Œä½¿ç”¨depositæ–¹æ³•å­˜æ¬¾3000å…ƒï¼Œç„¶åæ‰“å°ä½™é¢å’Œæœˆåˆ©ç‡ã€‚
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *  Ğ´Ò»¸öÓÃ»§³ÌĞò²âÊÔAccountÀà¡£ÔÚÓÃ»§³ÌĞòÖĞ£¬´´½¨Ò»¸öÕËºÅÎª1122¡¢Óà¶îÎª20000¡¢ÄêÀûÂÊ4.5%µÄAccount¶ÔÏó¡£
+ *  Ê¹ÓÃwithdraw·½·¨Ìá¿î30000Ôª£¬²¢´òÓ¡Óà¶î¡£
+ *  ÔÙÊ¹ÓÃwithdraw·½·¨Ìá¿î2500Ôª£¬Ê¹ÓÃdeposit·½·¨´æ¿î3000Ôª£¬È»ºó´òÓ¡Óà¶îºÍÔÂÀûÂÊ¡£
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:32
  * @Version 1.0
  */
@@ -16,13 +16,13 @@ public class AccountTest {
         Account acct = new Account(1122,20000,0.045);
 
         acct.withdraw(30000);
-        System.out.println("æ‚¨çš„è´¦æˆ·ä½™é¢ä¸ºï¼š" + acct.getBalance());
+        System.out.println("ÄúµÄÕË»§Óà¶îÎª£º" + acct.getBalance());
 
         acct.withdraw(2500);
         acct.deposit(3000);
-        System.out.println("æ‚¨çš„è´¦æˆ·ä½™é¢ä¸ºï¼š" + acct.getBalance());
+        System.out.println("ÄúµÄÕË»§Óà¶îÎª£º" + acct.getBalance());
 
-        System.out.println("æœˆåˆ©ç‡ä¸ºï¼š" + acct.getMonthlyInterest());
+        System.out.println("ÔÂÀûÂÊÎª£º" + acct.getMonthlyInterest());
 
     }
 }

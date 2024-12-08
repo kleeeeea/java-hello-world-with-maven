@@ -11,7 +11,7 @@ public class Product implements Comparable{ //商品类
 
     public Product(String name, double price) {
         this.name = name;
-        this.price = price;
+         this.price = price;
     }
 
     public Product() {

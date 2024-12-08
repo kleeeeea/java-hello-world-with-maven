@@ -39,7 +39,7 @@ public class ReflectTest {
         Person p1 = getInstance();
         System.out.println(p1);
 
-        String className = "com.atguigu04.other.dynamic.Person";
+        String className = "chapter17_reflect_teacher.src.com.atguigu04.other.dynamic.Person";
         Person per1 = getInstance(className);
         System.out.println(per1);
 
@@ -67,7 +67,7 @@ public class ReflectTest {
 
     @Test
     public void test2() throws Exception {
-        String className = "com.atguigu04.other.dynamic.Person";
+        String className = "chapter17_reflect_teacher.src.com.atguigu04.other.dynamic.Person";
         String methodName = "show";
 
         Object returnValue = invoke(className,methodName);

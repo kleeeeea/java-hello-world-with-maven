@@ -3,9 +3,9 @@ package oop2.com.atguigu07.object.tostring.exer;
 /**
  * ClassName: CircleTest
  * Description:
- *      å†™ä¸€ä¸ªæµ‹è¯•ç±»ï¼Œåˆ›å»ºä¸¤ä¸ªCircleå¯¹è±¡ï¼Œåˆ¤æ–­å…¶é¢œè‰²æ˜¯å¦ç›¸ç­‰ï¼›åˆ©ç”¨equalsæ–¹æ³•åˆ¤æ–­å…¶åŠå¾„æ˜¯å¦ç›¸ç­‰ï¼›
- *      åˆ©ç”¨toString()æ–¹æ³•è¾“å‡ºå…¶åŠå¾„ã€‚
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *      Ğ´Ò»¸ö²âÊÔÀà£¬´´½¨Á½¸öCircle¶ÔÏó£¬ÅĞ¶ÏÆäÑÕÉ«ÊÇ·ñÏàµÈ£»ÀûÓÃequals·½·¨ÅĞ¶ÏÆä°ë¾¶ÊÇ·ñÏàµÈ£»
+ *      ÀûÓÃtoString()·½·¨Êä³öÆä°ë¾¶¡£
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 11:47
  * @Version 1.0
  */
@@ -16,9 +16,9 @@ public class CircleTest {
 
         Circle c2 = new Circle("red",2.0,3.4);
 
-        System.out.println("é¢œè‰²æ˜¯å¦ç›¸ç­‰ï¼Ÿ" + c1.getColor().equals(c2.getColor()));
+        System.out.println("ÑÕÉ«ÊÇ·ñÏàµÈ£¿" + c1.getColor().equals(c2.getColor()));
 
-        System.out.println("åŠå¾„æ˜¯å¦ç›¸ç­‰ï¼Ÿ" + c1.equals(c2));
+        System.out.println("°ë¾¶ÊÇ·ñÏàµÈ£¿" + c1.equals(c2));
 
         System.out.println(c1);
         System.out.println(c1.toString());

@@ -1,4 +1,4 @@
-package chapter17_reflect_teacher.src.com.atguigu03.reflectapply.apply2;
+package chapter17_reflect_teacher.src.chapter17_reflect_teacher.src.com.atguigu03.reflectapply.apply2;
 
 import org.junit.Test;
 
@@ -15,14 +15,14 @@ public class OtherTest {
     //1. 获取运行时类的父类
     @Test
     public void test1() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.atguigu03.reflectapply.data.Person");
+        Class clazz = Class.forName("chapter17_reflect_teacher.src.com.atguigu03.reflectapply.data.Person");
         Class superClass = clazz.getSuperclass();
         System.out.println(superClass);
     }
     //2. 获取运行时类实现的接口
     @Test
     public void test2() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.atguigu03.reflectapply.data.Person");
+        Class clazz = Class.forName("chapter17_reflect_teacher.src.com.atguigu03.reflectapply.data.Person");
 
         Class[] interfaces = clazz.getInterfaces();
         for(Class c : interfaces){
@@ -32,7 +32,7 @@ public class OtherTest {
     //3. 获取运行时类所在的包
     @Test
     public void test3() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.atguigu03.reflectapply.data.Person");
+        Class clazz = Class.forName("chapter17_reflect_teacher.src.com.atguigu03.reflectapply.data.Person");
 
         Package pack = clazz.getPackage();
         System.out.println(pack);
@@ -40,7 +40,7 @@ public class OtherTest {
     //4. 获取运行时类的带泛型的父类
     @Test
     public void test4() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.atguigu03.reflectapply.data.Person");
+        Class clazz = Class.forName("chapter17_reflect_teacher.src.com.atguigu03.reflectapply.data.Person");
         Type superclass = clazz.getGenericSuperclass();
         System.out.println(superclass);
     }
@@ -54,7 +54,7 @@ public class OtherTest {
     * */
     @Test
     public void test5() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.atguigu03.reflectapply.data.Person");
+        Class clazz = Class.forName("chapter17_reflect_teacher.src.com.atguigu03.reflectapply.data.Person");
         //获取带泛型的父类（Type是一个接口，Class实现了此接口
         Type superclass = clazz.getGenericSuperclass();
         //如果父类是带泛型的，则可以强转为ParameterizedType

@@ -34,5 +34,6 @@ public class AnnotationTest {
         Column nameColumn = nameField.getDeclaredAnnotation(Column.class);
         System.out.println(nameColumn.columnName());//cust_name
         System.out.println(nameColumn.columnType()); //varchar(15)
+        System.out.print(clazz); System.out.println(" | clazz | chapter17_reflect_teacher/src/com/atguigu04/other/annotation/AnnotationTest.java:37 | chapter17_reflect_teacher.src.com.atguigu04.other.annotation.AnnotationTest.test2()");
     }
 }

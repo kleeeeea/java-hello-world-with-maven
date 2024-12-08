@@ -1,15 +1,15 @@
 package chapter17_reflect_teacher.src.com.atguigu01.example;
 
 /**
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 9:35
  */
 public class Person {
-    //å±æ€§
+    //ÊôĞÔ
     private String name;
     public int age;
 
-    //æ„é€ å™¨
+    //¹¹ÔìÆ÷
     public Person(){
         System.out.println("Person()...");
     }
@@ -23,13 +23,13 @@ public class Person {
         this.age = age;
     }
 
-    //æ–¹æ³•
+    //·½·¨
     public void show(){
-        System.out.println("ä½ å¥½ï¼Œæˆ‘æ˜¯ä¸€ä¸ªPerson");
+        System.out.println("ÄãºÃ£¬ÎÒÊÇÒ»¸öPerson");
     }
 
     private String showNation(String nation){
-        return "æˆ‘çš„å›½ç±æ˜¯ï¼š" + nation;
+        return "ÎÒµÄ¹ú¼®ÊÇ£º" + nation;
     }
 
     @Override

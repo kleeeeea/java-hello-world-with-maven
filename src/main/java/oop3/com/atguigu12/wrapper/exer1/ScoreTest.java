@@ -7,56 +7,56 @@ import java.util.Vector;
  * ClassName: ScoreTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 9:57
  * @Version 1.0
  */
 public class ScoreTest {
     public static void main(String[] args) {
 
-        //1. åˆ›å»ºVectorå¯¹è±¡ï¼šVector v=new Vector();
+        //1. ´´½¨Vector¶ÔÏó£ºVector v=new Vector();
         Vector v = new Vector();
 
         Scanner scanner = new Scanner(System.in);
 
-        int maxScore = 0; //è®°å½•æœ€é«˜åˆ†
+        int maxScore = 0; //¼ÇÂ¼×î¸ß·Ö
 
 
 
-        //2. ä»é”®ç›˜è·å–å¤šä¸ªå­¦ç”Ÿæˆç»©ï¼Œå­˜æ”¾åˆ°vä¸­ ï¼ˆä»¥è´Ÿæ•°ä»£è¡¨è¾“å…¥ç»“æŸï¼‰
+        //2. ´Ó¼üÅÌ»ñÈ¡¶à¸öÑ§Éú³É¼¨£¬´æ·Åµ½vÖĞ £¨ÒÔ¸ºÊı´ú±íÊäÈë½áÊø£©
         while(true){ //for(;;)
 
-            System.out.print("è¯·è¾“å…¥å­¦ç”Ÿæˆç»©ï¼ˆä»¥è´Ÿæ•°ä»£è¡¨è¾“å…¥ç»“æŸï¼‰ï¼š");
+            System.out.print("ÇëÊäÈëÑ§Éú³É¼¨£¨ÒÔ¸ºÊı´ú±íÊäÈë½áÊø£©£º");
             int intScore = scanner.nextInt();
 
             if(intScore < 0){
                 break;
             }
 
-//            //è£…ç®±ï¼šint --> Integerå¯¹è±¡
+//            //×°Ïä£ºint --> Integer¶ÔÏó
 //            Integer score = Integer.valueOf(intScore);
-//            //æ·»åŠ å­¦ç”Ÿæˆç»©åˆ°å®¹å™¨vä¸­
+//            //Ìí¼ÓÑ§Éú³É¼¨µ½ÈİÆ÷vÖĞ
 //            v.addElement(score);
 
-            //jdk5.0ä¹‹åï¼šè‡ªåŠ¨è£…ç®±
+            //jdk5.0Ö®ºó£º×Ô¶¯×°Ïä
             v.addElement(intScore);
 
-            //3. è·å–å­¦ç”Ÿæˆç»©çš„æœ€å¤§å€¼
+            //3. »ñÈ¡Ñ§Éú³É¼¨µÄ×î´óÖµ
             if(maxScore < intScore){
                 maxScore = intScore;
             }
         }
 
-        System.out.println("æœ€é«˜åˆ†ï¼š" + maxScore);
-        //4. ä¾æ¬¡è·å–vä¸­çš„æ¯ä¸ªå­¦ç”Ÿæˆç»©ï¼Œä¸æœ€é«˜åˆ†è¿›è¡Œæ¯”è¾ƒï¼Œè·å–å­¦ç”Ÿç­‰çº§ï¼Œå¹¶è¾“å‡º
+        System.out.println("×î¸ß·Ö£º" + maxScore);
+        //4. ÒÀ´Î»ñÈ¡vÖĞµÄÃ¿¸öÑ§Éú³É¼¨£¬Óë×î¸ß·Ö½øĞĞ±È½Ï£¬»ñÈ¡Ñ§ÉúµÈ¼¶£¬²¢Êä³ö
         for(int i = 0;i < v.size();i++){
             Object objScore = v.elementAt(i);
-            //æ–¹å¼1ï¼š
+            //·½Ê½1£º
 //            Integer integerScore = (Integer) objScore;
-//            //æ‹†ç®±
+//            //²ğÏä
 //            int score = integerScore.intValue();
 
-            //æ–¹å¼2ï¼šè‡ªåŠ¨æ‹†ç®±
+            //·½Ê½2£º×Ô¶¯²ğÏä
             int score = (Integer) objScore;
             char grade;
             if(maxScore - score <= 10){

@@ -4,7 +4,7 @@ package oop2.com.atguigu06.polymorphism;
  * ClassName: Person
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 16:20
  * @Version 1.0
  */
@@ -15,10 +15,10 @@ public class Person {
     int id = 1001;
 
     public void eat(){
-        System.out.println("äººåƒé¥­");
+        System.out.println("ÈË³Ô·¹");
     }
 
     public void walk(){
-        System.out.println("äººèµ°è·¯");
+        System.out.println("ÈË×ßÂ·");
     }
 }

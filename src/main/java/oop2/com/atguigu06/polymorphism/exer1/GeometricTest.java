@@ -3,9 +3,9 @@ package oop2.com.atguigu06.polymorphism.exer1;
 /**
  * ClassName: GeometricTest
  * Description:
- *      ç¼–å†™equalsAreaæ–¹æ³•æµ‹è¯•ä¸¤ä¸ªå¯¹è±¡çš„é¢ç§¯æ˜¯å¦ç›¸ç­‰ï¼ˆæ³¨æ„æ–¹æ³•çš„å‚æ•°ç±»å‹ï¼‰ï¼Œ
- *      ç¼–å†™displayGeometricObjectæ–¹æ³•æ˜¾ç¤ºå¯¹è±¡çš„é¢ç§¯ï¼ˆæ³¨æ„æ–¹æ³•çš„å‚æ•°ç±»å‹ï¼‰ã€‚
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ *      ±àĞ´equalsArea·½·¨²âÊÔÁ½¸ö¶ÔÏóµÄÃæ»ıÊÇ·ñÏàµÈ£¨×¢Òâ·½·¨µÄ²ÎÊıÀàĞÍ£©£¬
+ *      ±àĞ´displayGeometricObject·½·¨ÏÔÊ¾¶ÔÏóµÄÃæ»ı£¨×¢Òâ·½·¨µÄ²ÎÊıÀàĞÍ£©¡£
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 8:55
  * @Version 1.0
  */
@@ -22,31 +22,31 @@ public class GeometricTest {
 
         boolean isEquals = test.equalsArea(c1,c2);
         if(isEquals){
-            System.out.println("é¢ç§¯ç›¸ç­‰");
+            System.out.println("Ãæ»ıÏàµÈ");
         }else{
-            System.out.println("é¢ç§¯ä¸ç›¸ç­‰");
+            System.out.println("Ãæ»ı²»ÏàµÈ");
         }
 
-        //ä½¿ç”¨åŒ¿åå¯¹è±¡
+        //Ê¹ÓÃÄäÃû¶ÔÏó
         test.displayGeometricObject(new MyRectangle("blue",1.0,2.3,4.5));
 
     }
 
     /**
-     * æ¯”è¾ƒä¸¤ä¸ªå‡ ä½•å›¾å½¢çš„é¢ç§¯æ˜¯å¦ç›¸ç­‰
+     * ±È½ÏÁ½¸ö¼¸ºÎÍ¼ĞÎµÄÃæ»ıÊÇ·ñÏàµÈ
      * @param g1
      * @param g2
-     * @return true:è¡¨ç¤ºé¢ç§¯ç›¸ç­‰   false:é¢ç§¯ä¸ç›¸ç­‰
+     * @return true:±íÊ¾Ãæ»ıÏàµÈ   false:Ãæ»ı²»ÏàµÈ
      */
     public boolean equalsArea(GeometricObject g1,GeometricObject g2){
         return g1.findArea() == g2.findArea();
     }
 
     /**
-     * æ˜¾ç¤ºå‡ ä½•å›¾å½¢çš„é¢ç§¯
+     * ÏÔÊ¾¼¸ºÎÍ¼ĞÎµÄÃæ»ı
      * @param g
      */
     public void displayGeometricObject(GeometricObject g){ //GeometricObject g = new Circle("red",1.0,2.3);
-        System.out.println("å‡ ä½•å›¾å½¢çš„é¢ç§¯ä¸ºï¼š" + g.findArea()); //åŠ¨æ€ç»‘å®š  <---> é™æ€ç»‘å®š
+        System.out.println("¼¸ºÎÍ¼ĞÎµÄÃæ»ıÎª£º" + g.findArea()); //¶¯Ì¬°ó¶¨  <---> ¾²Ì¬°ó¶¨
     }
 }

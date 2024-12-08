@@ -4,7 +4,7 @@ package oop3.com.atguigu10._enum;
  * ClassName: SeasonTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:13
  * @Version 1.0
  */
@@ -19,19 +19,19 @@ public class SeasonTest {
     }
 }
 
-//jdk5.0ä¹‹å‰å®šä¹‰æšä¸¾ç±»çš„æ–¹å¼
+//jdk5.0Ö®Ç°¶¨ÒåÃ¶¾ÙÀàµÄ·½Ê½
 class Season{
-    //2. å£°æ˜å½“å‰ç±»çš„å¯¹è±¡çš„å®ä¾‹å˜é‡,ä½¿ç”¨private finalä¿®é¥°
-    private final String seasonName;//å­£èŠ‚çš„åç§°
-    private final String seasonDesc;//å­£èŠ‚çš„æè¿°
+    //2. ÉùÃ÷µ±Ç°ÀàµÄ¶ÔÏóµÄÊµÀı±äÁ¿,Ê¹ÓÃprivate finalĞŞÊÎ
+    private final String seasonName;//¼¾½ÚµÄÃû³Æ
+    private final String seasonDesc;//¼¾½ÚµÄÃèÊö
 
-    //1. ç§æœ‰åŒ–ç±»çš„æ„é€ å™¨
+    //1. Ë½ÓĞ»¯ÀàµÄ¹¹ÔìÆ÷
     private Season(String seasonName,String seasonDesc){
         this.seasonName = seasonName;
         this.seasonDesc = seasonDesc;
     }
 
-    //3. æä¾›å®ä¾‹å˜é‡çš„getæ–¹æ³•
+    //3. Ìá¹©ÊµÀı±äÁ¿µÄget·½·¨
     public String getSeasonName() {
         return seasonName;
     }
@@ -39,11 +39,11 @@ class Season{
     public String getSeasonDesc() {
         return seasonDesc;
     }
-    //4. åˆ›å»ºå½“å‰ç±»çš„å®ä¾‹ï¼Œéœ€è¦ä½¿ç”¨public static finalä¿®é¥°
-    public static final Season SPRING = new Season("æ˜¥å¤©","æ˜¥æš–èŠ±å¼€");
-    public static final Season SUMMER = new Season("å¤å¤©","å¤æ—¥ç‚ç‚");
-    public static final Season AUTUMN = new Season("ç§‹å¤©","ç§‹é«˜æ°”çˆ½");
-    public static final Season WINTER = new Season("å†¬å¤©","ç™½é›ªçš‘çš‘");
+    //4. ´´½¨µ±Ç°ÀàµÄÊµÀı£¬ĞèÒªÊ¹ÓÃpublic static finalĞŞÊÎ
+    public static final Season SPRING = new Season("´ºÌì","´ºÅ¯»¨¿ª");
+    public static final Season SUMMER = new Season("ÏÄÌì","ÏÄÈÕÑ×Ñ×");
+    public static final Season AUTUMN = new Season("ÇïÌì","Çï¸ßÆøË¬");
+    public static final Season WINTER = new Season("¶¬Ìì","°×Ñ©°¨°¨");
 
     @Override
     public String toString() {

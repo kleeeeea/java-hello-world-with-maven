@@ -4,7 +4,7 @@ package chapter10_thread_teacher.com.atguigu02.method_lifecycle;
  * ClassName: EvenNumberTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 14:15
  * @Version 1.0
  */
@@ -44,12 +44,12 @@ public class EvenNumberTest {
 
     public static void main(String[] args) {
 
-        PrintNumber t1 = new PrintNumber("çº¿ç¨‹1");
-        t1.setName("å­çº¿ç¨‹1");
+        PrintNumber t1 = new PrintNumber("Ïß³Ì1");
+        t1.setName("×ÓÏß³Ì1");
         t1.setPriority(Thread.MIN_PRIORITY);
         t1.start();
 
-        Thread.currentThread().setName("ä¸»çº¿ç¨‹");
+        Thread.currentThread().setName("Ö÷Ïß³Ì");
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 
         for (int i = 1; i <= 100; i++) {
@@ -68,7 +68,7 @@ public class EvenNumberTest {
 
         }
 
-//        System.out.println("å­çº¿ç¨‹1æ˜¯å¦å­˜æ´»ï¼Ÿ" + t1.isAlive());
+//        System.out.println("×ÓÏß³Ì1ÊÇ·ñ´æ»î£¿" + t1.isAlive());
 
     }
 

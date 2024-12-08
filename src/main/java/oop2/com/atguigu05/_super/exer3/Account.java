@@ -4,14 +4,14 @@ package oop2.com.atguigu05._super.exer3;
  * ClassName: Account
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉÐ¹è¹È-ËÎºì¿µ
  * @Create 14:28
  * @Version 1.0
  */
 public class Account {
     private int id;
     private double balance;
-    private double annualInterestRate;//å¹´åˆ©çŽ‡
+    private double annualInterestRate;//ÄêÀûÂÊ
 
 //    public Account(){}
 
@@ -47,7 +47,7 @@ public class Account {
     }
 
     /**
-     * èŽ·å–æœˆåˆ©çŽ‡
+     * »ñÈ¡ÔÂÀûÂÊ
      * @return
      */
     public double getMonthlyInterest(){
@@ -55,20 +55,20 @@ public class Account {
     }
 
     /**
-     * å–é’±æ“ä½œ
-     * @param amount  è¦å–çš„é’±æ•°
+     * È¡Ç®²Ù×÷
+     * @param amount  ÒªÈ¡µÄÇ®Êý
      */
     public void withdraw(double amount){
         if(balance >= amount){
             balance -= amount;
         }else{
-            System.out.println("ä½™é¢ä¸è¶³ï¼");
+            System.out.println("Óà¶î²»×ã£¡");
         }
     }
 
     /**
-     * å­˜é’±æ“ä½œ
-     * @param amount  è¦å­˜çš„é¢åº¦
+     * ´æÇ®²Ù×÷
+     * @param amount  Òª´æµÄ¶î¶È
      */
     public void deposit(double amount){
         if(amount > 0){

@@ -20,8 +20,7 @@ public class FruitTest {
     public void test1() throws Exception {
         //1. 读取配置文件中的信息，获取全类名
         Properties pros = new Properties();
-
-        File file = new File("src/config.properties");
+        File file = new File("src/main/java/chapter17_reflect_teacher/src/config.properties");
         FileInputStream fis = new FileInputStream(file);
 
         pros.load(fis);

@@ -4,7 +4,7 @@ package oop3.com.atguigu01._static;
  * ClassName: ChineseTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 15:47
  * @Version 1.0
  */
@@ -16,12 +16,12 @@ public class ChineseTest {
 
 
         Chinese c1 = new Chinese();
-        c1.name = "å§šæ˜";
+        c1.name = "Ò¦Ã÷";
         c1.age = 40;
         c1.nation = "China";
 
         Chinese c2 = new Chinese();
-        c2.name = "åˆ˜ç¿”";
+        c2.name = "ÁõÏè";
         c2.age = 39;
 
         System.out.println(c1);
@@ -41,17 +41,17 @@ public class ChineseTest {
     }
 
     public static void test(){
-        System.out.println("æˆ‘æ˜¯staticçš„æµ‹è¯•æ–¹æ³•");
+        System.out.println("ÎÒÊÇstaticµÄ²âÊÔ·½·¨");
     }
 }
 
-class Chinese{ //ä¸­å›½äººç±»
-    //éé™æ€å˜é‡ã€å®ä¾‹å˜é‡
+class Chinese{ //ÖĞ¹úÈËÀà
+    //·Ç¾²Ì¬±äÁ¿¡¢ÊµÀı±äÁ¿
     String name;
     int age;
 
-    //é™æ€å˜é‡ã€ç±»å˜é‡
-    static String nation = "ä¸­å›½";
+    //¾²Ì¬±äÁ¿¡¢Àà±äÁ¿
+    static String nation = "ÖĞ¹ú";
 
     @Override
     public String toString() {
@@ -62,32 +62,32 @@ class Chinese{ //ä¸­å›½äººç±»
     }
 
     public void eat(String food){
-        System.out.println("æˆ‘å–œæ¬¢åƒ" + food);
+        System.out.println("ÎÒÏ²»¶³Ô" + food);
     }
 
     public static void show(){
-        System.out.println("æˆ‘æ˜¯ä¸€ä¸ªä¸­å›½äºº");
+        System.out.println("ÎÒÊÇÒ»¸öÖĞ¹úÈË");
 
-        //è°ƒç”¨é™æ€çš„ç»“æ„
+        //µ÷ÓÃ¾²Ì¬µÄ½á¹¹
         System.out.println("nation = " + Chinese.nation);
         method1();
 
-        //è°ƒç”¨éé™æ€çš„ç»“æ„
+        //µ÷ÓÃ·Ç¾²Ì¬µÄ½á¹¹
 //        System.out.println("name = " + this.name);
-//        this.eat("é¥ºå­");
+//        this.eat("½È×Ó");
     }
 
     public static void method1(){
-        System.out.println("æˆ‘æ˜¯é™æ€çš„æµ‹è¯•æ–¹æ³•");
+        System.out.println("ÎÒÊÇ¾²Ì¬µÄ²âÊÔ·½·¨");
     }
 
     public void method2(){
-        System.out.println("æˆ‘æ˜¯éé™æ€çš„æµ‹è¯•æ–¹æ³•");
-        //è°ƒç”¨éé™æ€çš„ç»“æ„
+        System.out.println("ÎÒÊÇ·Ç¾²Ì¬µÄ²âÊÔ·½·¨");
+        //µ÷ÓÃ·Ç¾²Ì¬µÄ½á¹¹
         System.out.println("name = " + this.name);
-        this.eat("é¥ºå­");
+        this.eat("½È×Ó");
 
-        //è°ƒç”¨é™æ€çš„ç»“æ„
+        //µ÷ÓÃ¾²Ì¬µÄ½á¹¹
         System.out.println("nation = " + nation);
         method1();
     }
