@@ -5,61 +5,59 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
  * ClassName: TCPTest1
  * Description:
- * ÀıÌâ1£º¿Í»§¶Ë·¢ËÍÄÚÈİ¸ø·şÎñ¶Ë£¬·şÎñ¶Ë½«ÄÚÈİ´òÓ¡µ½¿ØÖÆÌ¨ÉÏ¡£
+ * ä¾‹é¢˜1ï¼šå®¢æˆ·ç«¯å‘é€å†…å®¹ç»™æœåŠ¡ç«¯ï¼ŒæœåŠ¡ç«¯å°†å†…å®¹æ‰“å°åˆ°æ§åˆ¶å°ä¸Šã€‚
  *
- * @Author ÉĞ¹è¹È-ËÎºì¿µ
+ * @Author å°šç¡…è°·-å®‹çº¢åº·
  * @Create 9:24
  * @Version 1.0
  */
-public class TCPTestServer {
+public class TCPTestServer1 {
 
 
-    //·şÎñ¶Ë
+    //æœåŠ¡ç«¯
     @Test
     public static void main(String[] args) {
         ServerSocket serverSocket = null;
-        Socket socket = null; //×èÈûÊ½µÄ·½·¨
+        Socket socket = null; //é˜»å¡å¼çš„æ–¹æ³•
         InputStream is = null;
         try {
-            //1. ´´½¨Ò»¸öServerSocket
+            //1. åˆ›å»ºä¸€ä¸ªServerSocket
             int port = 8989;
             serverSocket = new ServerSocket(port);
 
-            //2. µ÷ÓÃaccept()£¬½ÓÊÕ¿Í»§¶ËµÄSocket
+            //2. è°ƒç”¨accept()ï¼Œæ¥æ”¶å®¢æˆ·ç«¯çš„Socket
             socket = serverSocket.accept();
-            System.out.println("·şÎñÆ÷¶ËÒÑ¿ªÆô");
+            System.out.println("æœåŠ¡å™¨ç«¯å·²å¼€å¯");
 
-            System.out.println("ÊÕµ½ÁËÀ´×ÔÓÚ" + socket.getInetAddress().getHostAddress() + "µÄÁ¬½Ó");
+            System.out.println("æ”¶åˆ°äº†æ¥è‡ªäº" + socket.getInetAddress().getHostAddress() + "çš„è¿æ¥");
 
-            //3. ½ÓÊÕÊı¾İ
+            //3. æ¥æ”¶æ•°æ®
             is = socket.getInputStream();
             byte[] buffer = new byte[5];
             int len;
-            ByteArrayOutputStream baos = new ByteArrayOutputStream(); //ÄÚ²¿Î¬»¤ÁËÒ»¸öbyte[]
+            ByteArrayOutputStream baos = new ByteArrayOutputStream(); //å†…éƒ¨ç»´æŠ¤äº†ä¸€ä¸ªbyte[]
             while ((len = is.read(buffer)) != -1) {
-                //´íÎóµÄ£¬¿ÉÄÜ»á³öÏÖÂÒÂë¡£
+                //é”™è¯¯çš„ï¼Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ã€‚
 //                String str = new String(buffer, 0, len);
 //                System.out.print(str);
 
-                //ÕıÈ·µÄ
+                //æ­£ç¡®çš„
                 baos.write(buffer,0,len);
             }
 
             System.out.println(baos.toString());
 
-            System.out.println("\nÊı¾İ½ÓÊÕÍê±Ï");
+            System.out.println("\næ•°æ®æ¥æ”¶å®Œæ¯•");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            //4. ¹Ø±ÕSocket¡¢ServerSocket¡¢Á÷
+            //4. å…³é—­Socketã€ServerSocketã€æµ
             try {
                 if (socket != null) {
                     socket.close();
