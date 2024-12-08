@@ -17,11 +17,10 @@ import java.net.Socket;
  * @Create 9:24
  * @Version 1.0
  */
-public class TCPTestServer1 {
+public class TCPTest1Server {
 
 
     //服务端
-    @Test
     public static void main(String[] args) {
         ServerSocket serverSocket = null;
         Socket socket = null; //阻塞式的方法

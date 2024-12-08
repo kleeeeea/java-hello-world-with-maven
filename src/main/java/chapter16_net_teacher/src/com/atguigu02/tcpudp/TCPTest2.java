@@ -52,34 +52,4 @@ public class TCPTest2 {
     }
 
     //服务端
-    @Test
-    public void server() throws IOException {
-        //1. 创建ServerSocket
-        int port = 9090;
-        ServerSocket serverSocket = new ServerSocket(port);
-        //2. 接收来自于客户端的socket:accept()
-        Socket socket = serverSocket.accept();
-
-        //3. 通过Socket获取一个输入流
-        InputStream is = socket.getInputStream();
-
-        //4. 创建File类的实例、FileOutputStream的实例
-        File file = new File("pic_copy.jpg");
-        FileOutputStream fos = new FileOutputStream(file);
-
-        //5. 读写过程
-        byte[] buffer = new byte[1024];
-        int len;
-        while((len = is.read(buffer)) != -1){
-            fos.write(buffer,0,len);
-        }
-
-        System.out.println("数据接收完毕");
-
-        //6. 关闭相关的Socket和流
-        fos.close();
-        is.close();
-        socket.close();
-        serverSocket.close();
-    }
 }

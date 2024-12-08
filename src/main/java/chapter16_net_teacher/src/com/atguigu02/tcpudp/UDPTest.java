@@ -11,44 +11,44 @@ import java.net.InetAddress;
  * ClassName: UDPTest
  * Description:
  *
- * @Author å°šç¡…è°·-å®‹çº¢åº·
+ * @Author ÉĞ¹è¹È-ËÎºì¿µ
  * @Create 11:32
  * @Version 1.0
  */
-public class UDPTest {
-    //å‘é€ç«¯
+public class  UDPTest {
+    //·¢ËÍ¶Ë
     @Test
     public void sender() throws Exception {
-        //1. åˆ›å»ºDatagramSocketçš„å®ä¾‹
+        //1. ´´½¨DatagramSocketµÄÊµÀı
         DatagramSocket ds = new DatagramSocket();
 
-        //2. å°†æ•°æ®ã€ç›®çš„åœ°çš„ipï¼Œç›®çš„åœ°çš„ç«¯å£å·éƒ½å°è£…åœ¨DatagramPacketæ•°æ®æŠ¥ä¸­
+        //2. ½«Êı¾İ¡¢Ä¿µÄµØµÄip£¬Ä¿µÄµØµÄ¶Ë¿ÚºÅ¶¼·â×°ÔÚDatagramPacketÊı¾İ±¨ÖĞ
         InetAddress inetAddress = InetAddress.getByName("127.0.0.1");
         int port = 9090;
-        byte[] bytes = "æˆ‘æ˜¯å‘é€ç«¯".getBytes("utf-8");
+        byte[] bytes = "ÎÒÊÇ·¢ËÍ¶Ë".getBytes("utf-8");
         DatagramPacket packet =  new DatagramPacket(bytes,0,bytes.length,inetAddress,port);
 
-        //å‘é€æ•°æ®
+        //·¢ËÍÊı¾İ
         ds.send(packet);
 
         ds.close();
     }
 
-    //æ¥æ”¶ç«¯
+    //½ÓÊÕ¶Ë
     @Test
     public void receiver() throws IOException {
-        //1. åˆ›å»ºDatagramSocketçš„å®ä¾‹
+        //1. ´´½¨DatagramSocketµÄÊµÀı
         int port = 9090;
         DatagramSocket ds = new DatagramSocket(port);
 
-        //2. åˆ›å»ºæ•°æ®æŠ¥çš„å¯¹è±¡ï¼Œç”¨äºæ¥æ”¶å‘é€ç«¯å‘é€è¿‡æ¥çš„æ•°æ®
+        //2. ´´½¨Êı¾İ±¨µÄ¶ÔÏó£¬ÓÃÓÚ½ÓÊÕ·¢ËÍ¶Ë·¢ËÍ¹ıÀ´µÄÊı¾İ
         byte[] buffer = new byte[1024 * 64];
         DatagramPacket packet = new DatagramPacket(buffer,0,buffer.length);
 
-        //3. æ¥æ”¶æ•°æ®
+        //3. ½ÓÊÕÊı¾İ
         ds.receive(packet);
 
-        //4.è·å–æ•°æ®ï¼Œå¹¶æ‰“å°åˆ°æ§åˆ¶å°ä¸Š
+        //4.»ñÈ¡Êı¾İ£¬²¢´òÓ¡µ½¿ØÖÆÌ¨ÉÏ
         String str = new String(packet.getData(),0,packet.getLength());
         System.out.println(str);
 

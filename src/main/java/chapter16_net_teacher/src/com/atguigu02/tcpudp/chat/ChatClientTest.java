@@ -8,26 +8,26 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * æ¡ˆä¾‹ï¼šèŠå¤©å®¤çš„å®ç° ï¼ˆå®¢æˆ·ç«¯ï¼‰
+ * °¸Àı£ºÁÄÌìÊÒµÄÊµÏÖ £¨¿Í»§¶Ë£©
  *
- * @author å°šç¡…è°·-å®‹çº¢åº·
+ * @author ÉĞ¹è¹È-ËÎºì¿µ
  * @create 16:42
  */
 public class ChatClientTest {
 	public static void main(String[] args)throws Exception {
-		//1ã€è¿æ¥æœåŠ¡å™¨
+		//1¡¢Á¬½Ó·şÎñÆ÷
 		Socket socket = new Socket("127.0.0.1",8989);
 		
-		//2ã€å¼€å¯ä¸¤ä¸ªçº¿ç¨‹
-		//(1)ä¸€ä¸ªçº¿ç¨‹è´Ÿè´£çœ‹åˆ«äººèŠï¼Œå³æ¥æ”¶æœåŠ¡å™¨è½¬å‘çš„æ¶ˆæ¯
+		//2¡¢¿ªÆôÁ½¸öÏß³Ì
+		//(1)Ò»¸öÏß³Ì¸ºÔğ¿´±ğÈËÁÄ£¬¼´½ÓÊÕ·şÎñÆ÷×ª·¢µÄÏûÏ¢
 		Receive receive = new Receive(socket);
 		receive.start();
 		
-		//(2)ä¸€ä¸ªçº¿ç¨‹è´Ÿè´£å‘é€è‡ªå·±çš„è¯
+		//(2)Ò»¸öÏß³Ì¸ºÔğ·¢ËÍ×Ô¼ºµÄ»°
 		Send send = new Send(socket);
 		send.start();
 		
-		send.join();//ç­‰æˆ‘å‘é€çº¿ç¨‹ç»“æŸäº†ï¼Œæ‰ç»“æŸæ•´ä¸ªç¨‹åº
+		send.join();//µÈÎÒ·¢ËÍÏß³Ì½áÊøÁË£¬²Å½áÊøÕû¸ö³ÌĞò
 		
 		socket.close();
 	}
@@ -45,13 +45,13 @@ class Send extends Thread{
 			Scanner input = new Scanner(System.in);
 
 			OutputStream outputStream = socket.getOutputStream();
-			//æŒ‰è¡Œæ‰“å°
+			//°´ĞĞ´òÓ¡
 			PrintStream ps = new PrintStream(outputStream);
 			
-			//ä»é”®ç›˜ä¸æ–­çš„è¾“å…¥è‡ªå·±çš„è¯ï¼Œç»™æœåŠ¡å™¨å‘é€ï¼Œç”±æœåŠ¡å™¨ç»™å…¶ä»–äººè½¬å‘
+			//´Ó¼üÅÌ²»¶ÏµÄÊäÈë×Ô¼ºµÄ»°£¬¸ø·şÎñÆ÷·¢ËÍ£¬ÓÉ·şÎñÆ÷¸øÆäËûÈË×ª·¢
 			while(true){
-				System.out.print("è‡ªå·±çš„è¯ï¼š");
-				String str = input.nextLine(); //é˜»å¡å¼çš„æ–¹æ³•
+				System.out.print("×Ô¼ºµÄ»°£º");
+				String str = input.nextLine(); //×èÈûÊ½µÄ·½·¨
 				if("bye".equals(str)){
 					break;
 				}
